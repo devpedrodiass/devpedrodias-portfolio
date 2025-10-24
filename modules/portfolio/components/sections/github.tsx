@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import { SectionTemplate } from "../section-template";
 import GitHubCalendar from "react-github-calendar";
 import { useTheme } from "next-themes";
@@ -17,10 +17,12 @@ export const Github = () => {
 
   return (
     <SectionTemplate id="github" title="Github Contributions - @devpedrodiass">
-      <GitHubCalendar
-        username="devpedrodiass"
-        colorScheme={theme as "light" | "dark"}
-      />
+      <Suspense fallback={<div />}>
+        <GitHubCalendar
+          username="devpedrodiass"
+          colorScheme={theme as "light" | "dark"}
+        />
+      </Suspense>
     </SectionTemplate>
   );
 };
