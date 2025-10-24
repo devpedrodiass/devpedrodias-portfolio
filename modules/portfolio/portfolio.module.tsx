@@ -26,7 +26,7 @@ export const PortfolioModulePage = () => {
         <ProfessionalExperience />
         <TechnicalContributions />
         <Projects />
-        <Github />
+        {/* <Github /> */}
         <MyTech />
         <CTA />
         <Contact />
