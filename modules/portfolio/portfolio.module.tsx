@@ -1,6 +1,6 @@
-import { Header } from "./components/header/header";
 import { About } from "./components/sections/about";
 import { Apresentation } from "./components/sections/apresentation";
+import { Blog } from "./components/sections/blog";
 import { Contact } from "./components/sections/contact";
 import { CTA } from "./components/sections/cta";
 import { Github } from "./components/sections/github";
@@ -15,11 +15,9 @@ export const PortfolioModulePage = () => {
       id="portfolio"
       className="relative min-h-dvh w-dvw max-w-dvw overflow-x-hidden"
     >
-      <Header />
-
       <section
         id="content"
-        className="mt-17 mx-auto max-w-xl w-full flex flex-col"
+        className="pt-20 mx-auto max-w-xl w-full flex flex-col"
       >
         <Apresentation />
         <About />
@@ -29,6 +27,7 @@ export const PortfolioModulePage = () => {
         {/* <Github /> */}
         <MyTech />
         <CTA />
+        <Blog />
         <Contact />
       </section>
     </section>

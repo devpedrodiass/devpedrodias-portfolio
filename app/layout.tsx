@@ -6,6 +6,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/shared/providers/theme-provider";
+import { Header } from "@/shared/components/header";
 
 const fontSans = FontSans({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>
